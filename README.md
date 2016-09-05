@@ -11,3 +11,6 @@ Write a program which reads the numbers.txt file (available in BlackBoard in the
 2. the highest number in the array
 3. the total of the numbers in the array
 4. the average of the numbers in the array.
+
+## Week 3
+Modify the binarySearch function presented in this chapter so it searches an array of strings instead of an array of ints.  (The binarySearch code can be found in the Week 3 folder.)  Test the function with a driver program.  Use the code in the attached file (ch8_sort.txt) as a skeleton for the driver program.  This code also contains the word list which the function will search; the words are listed in alphabetical order.
