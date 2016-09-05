@@ -3,23 +3,43 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 // Function prototypes
-int binarySearch(int[], int, int);
+int binarySearch(string [], int, string);
 
 int main()
 {
+	// Initialize the variables for the application
+	string search;
+	int position;
 	const int NUM_NAMES = 10;
 	string names[NUM_NAMES] = { "baboon", "giraffe", "hippopotamus", "lion", "monkey", "rhinoceros", "tapir", "tiger", "wildebeest", "zebra" };
 
-	// Insert your code to complete this program
+	// Prompt the user to see what string they would like to search for and assign to variable
+	cout << "What word would you like to search for?" << endl;
+	cin >> search;
 
-	return;
+	// Assign the result of the function to an int to tell the user the position of the string in the array
+	position = binarySearch(names, NUM_NAMES, search);
+
+	// If the position of the string was found return it, if not let user know the search was unsuccessful 
+	if (position != -1) 
+	{
+		cout << "The string was located at the " << position << " in the array." << endl;
+	}
+	else
+	{
+		cout << search << " was not found in the array, did you make a spelling mistake?" << endl;
+	}
+
+	system("pause");
+	return 0;
 }
 
 // Change function to search an array of strings
-int binarySearch(int array[], int size, int value)
+int binarySearch(string array[], int size, string value)
 {
 	int first = 0,             // First array element
 		last = size - 1,       // Last array element
