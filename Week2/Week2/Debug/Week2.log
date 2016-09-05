@@ -1,4 +1,5 @@
 ﻿  Week2.cpp
+Week2.cpp(21): warning C4101: 'number': unreferenced local variable
   AssemblyInfo.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
   Week2.vcxproj -> C:\Users\chris\Documents\cps212\Week2\Debug\Week2.exe
   Week2.vcxproj -> C:\Users\chris\Documents\cps212\Week2\Debug\Week2.pdb (Partial PDB)

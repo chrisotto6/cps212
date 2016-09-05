@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 
 // Function prototypes
@@ -14,38 +15,31 @@ int averageOfNumbers(int total, int lines);
 
 int main()
 {
-	// Declare array to be used
-	int numbers[15];
+	// Declare variables to be used
+	const int size = 100;
+	int numbers[size] = { 0 };
 	int number;
-	ifstream file;
-	string line;
-	int n = 0;
+	std::ifstream file("c:\\numbers.txt");
+	std::string line;
+	int cnt = 0;
 
-	// Open the file read all the numbers and assign them to an array then close it once we have saved the array to memory
-	file.open("numbers.txt");
-
-	while (file >> number) {
-		number = numbers[n];
-		n++;
-	}
-
-	file.close();
-
-	// Get the length of the array and assign it as a constant for looping
-	const int lines = sizeof(numbers) / sizeof(numbers[0]);
+	// Open the file read all the numbers and assign them to an array 
+	while (cnt < size && file >> numbers[cnt])
+		cnt++;
 
 	// Run through our functions to get all the require information and print it out to the user
-	int lowest = lowestNumber(numbers, lines);
-	int largest = largestNumber(numbers, lines);
-	int total = totalOfNumbers(numbers, lines);
-	int average = averageOfNumbers(total, lines);
+	int lowest = lowestNumber(numbers, cnt);
+	int largest = largestNumber(numbers, cnt);
+	int total = totalOfNumbers(numbers, cnt);
+	int average = averageOfNumbers(total, cnt);
 
 	// Print the information out to the console for the user
-	cout << "The lowest number is: " << lowest;
-	cout << "The largest number is: " << largest;
-	cout << "The total of all the numbers is: " << total;
-	cout << "The average of all the numbers is: " << average;
+	cout << "The lowest number is: " << lowest << endl;
+	cout << "The largest number is: " << largest << endl;
+	cout << "The total of all the numbers is: " << total << endl;
+	cout << "The average of all the numbers is: " << average << endl;
 
+	file.close();
 	system("pause");
 	return 0;
 }
