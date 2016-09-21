@@ -1,0 +1,6 @@
+﻿  Week4.cpp
+c:\users\chris\documents\cps212\week4\week4\week4.cpp(58): warning C4715: 'reverseArr': not all control paths return a value
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Week4.vcxproj -> C:\Users\chris\Documents\cps212\Week4\Debug\Week4.exe
+  Week4.vcxproj -> C:\Users\chris\Documents\cps212\Week4\Debug\Week4.pdb (Partial PDB)
