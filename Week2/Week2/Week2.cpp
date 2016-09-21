@@ -8,10 +8,10 @@
 using namespace std;
 
 // Function prototypes
-int lowestNumber(int numbers[], int lines);
-int largestNumber(int number[], int lines);
-int totalOfNumbers(int numbers[], int lines);
-int averageOfNumbers(int total, int lines);
+int lowestNumber(int [], int);
+int largestNumber(int [], int);
+int totalOfNumbers(int [], int);
+int averageOfNumbers(int, int);
 
 int main()
 {
