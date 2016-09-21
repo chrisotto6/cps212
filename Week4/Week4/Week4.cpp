@@ -38,7 +38,7 @@ void *reverseArr(int arr[], int size) {
 	}
 
 	// Allocate new array
-	numbers = new int[size];
+	*numbers = new int[size];
 
 	// Reverse the old array and save it to the new array
 	for (int index = 0; index < size; index++) {
