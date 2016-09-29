@@ -22,3 +22,15 @@ a) In the main function, define an integer array with five entries and assign va
 
 b) Pass the array to a function.  Within the function, dynamically allocate a new integer array.  Programmatically assign the value from the original array to the new array in reverse order such that the first entry in the original array becomes the fifth entry in the new array, the second entry in the original array becomes the fourth entry in the new array, and so on.  Display the contents of the new array in the function.  Do not return the new array from the function.  Do not change the contents of the original array.  Use a pointer to an array, i.e., use dereferencing, when assigning and displaying the contents of the new array.  The dynamically allocated array will be deleted.
 
+## Week 5
+Write a program with three functions:  upper, lower, and reverse.
+
+The upper function will accept a pointer to a string or C-string as an argument.  It will step through each character in the string converting it (where necessary) to uppercase.
+
+The lower function will accept a pointer to a string or C-string as an argument.  It will step through each character in the string converting it (where necessary) to lowercase.
+
+Like the upper and lower functions, the reverse function will accept a pointer to a string or C-string.  It will step through each character in the string converting uppercase characters to lowercase and lowercase characters to uppercase; numbers and special characters will be unaffected.
+
+The program will execute the functions in the following order:  upper, lower, and reverse.
+
+When entering "AbCd", the upper function will return "ABCD"; the lower function will return "abcd"; and the reverse function will return "aBcD".
