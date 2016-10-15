@@ -51,4 +51,5 @@ B 81 - 90
 C 71 - 80
 D 61 - 70
 F 0 - 60
+
 Store the course grade in the Grade member of the structure.  Display the student name, ID, average test score, and course grade on the screen.
