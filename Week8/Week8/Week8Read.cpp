@@ -1,4 +1,4 @@
-// Week8Write.cpp : main project file.
+// Week8Read.cpp : main project file.
 // Chris Otto - Programming II
 // Chapter 12 Assignment
 
@@ -7,6 +7,7 @@
 #include <fstream>
 using namespace std;
 
+// Prototype for Method
 void printParts(int, int, int);
 
 const int DESC = 30, DATE = 14;
