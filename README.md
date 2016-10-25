@@ -71,3 +71,23 @@ b) The second program will read the file created by the first program using the 
 total wholesale value of the inventory
 total retail value of the inventory
 total quantity of all items in the inventory
+
+## Week 9/10
+Write a Circle class that has the following member variables:
+
+* radius: a double
+* pi: a double initialized with the value of 3.14159
+
+The class shall have the following member functions:
+
+* Default Constructor: a default constructor which sets radius to 0.0
+* Constructor: accepts the radius of the circle as an argument
+* setRadius: a mutator function for the radius variable
+* getRadius: an accessor function for the radius variable
+* getArea: returns the area of the circle which is calculated as area = pi * radius * radius
+* getDiameter: returns the diameter of the circle which is calculated as diameter = radius * 2
+* getCircumference: returns the circumference of the circle which is calculated as circumference = 2 * pi * radius
+
+Write a program with driver, implementation, and specification files which demonstrates the Circle class by asking the user for the circle's radius, creating a Circle object, and then reporting the circle's area, diameter, and circumference.
+
+The specification file will contain declarations for the member variables and prototypes for the member functions.  The implementation file will contain the fully defined member functions and constructors.
