@@ -71,10 +71,6 @@ bool VerifyDate::isLeap(double year) const {
 bool VerifyDate::validateDate(int day, int month, double year) {
 }
 
-// Checks to make sure the day input is valid
-bool VerifyDate::validateDay(int day) {
-}
-
 // Checks to make sure the month input is valid
 bool VerifyDate::validateMonth(int month) {
 }
