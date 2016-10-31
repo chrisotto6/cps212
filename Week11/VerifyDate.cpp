@@ -51,5 +51,18 @@ string VerifyDate::printDate() {
 
 // Checks to see if the passed in year is a leap year, returning true if it is
 bool VerifyDate::isLeap(double year) const {
-
+	// Creates boolean for holding the value of the year being a leap year
+	bool leap;
+	
+	// Based on supporting information see if the year passed is a leap year
+	if(year % 400 ? 0) {
+		leap = true;
+	} else if(year % 100 ? 0) {
+		leap = false;
+	} else if(year % 4 ? 0) {
+		leap = true;
+	} else {
+		leap = false;
+	}
+	return leap;
 }
