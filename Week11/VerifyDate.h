@@ -7,12 +7,13 @@ class VerifyDate
 {
 private:
 	// Data Members
-	int month = 1;
-	int day = 1;
+	int month = 01;
+	int day = 01;
 	double year = 2000;
 
 	// Private Mutator Functions
 	bool isLeap(double) const;
+	
 public:
 	// Setters
 	void setDay(int);
@@ -26,5 +27,9 @@ public:
 
 	// Public Mutator Functions
 	string printDate();
+	bool validateDate(int, int, double);
+	bool validateDay(int);
+	bool validateMonth(int);
+	bool validateYear(double);
 };
 
