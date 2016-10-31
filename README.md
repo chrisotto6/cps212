@@ -104,6 +104,7 @@ Create a project consisting of three files – driver program, implementation, a
 * Create a public function, PrintDate, to print the date in the form mm/dd/year, e.g., 10/22/2000 or 4/08/2011.
 * Create a private function, IsLeap, which will return true when the year is a leap year and false when it is not.
 * Create a public function, CheckDate, which will return true when the month, day, and year are valid and false when they are not. For example, to be valid, the day must be appropriate for the given month and/or year, if a leap year. The date must be between January 1, 1850, and December 31, 2100.
+
 (2) Create a specification file containing the declaration of the VerifyDate class.
 (3) Create a implementation file containing the member function definitions for VerifyDate.
 (4) Create a driver program which uses the VerifyDate class. The main function should prompt the user to input month, day, and year, call the function to display the date, call the function to verify the date and indicate the result to the user, and permit the user to enter another date for verification.
