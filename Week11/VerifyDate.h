@@ -28,7 +28,6 @@ public:
 	// Public Mutator Functions
 	string printDate();
 	bool validateDate(int, int, double);
-	bool validateDay(int);
 	bool validateMonth(int);
 	bool validateYear(double);
 };
