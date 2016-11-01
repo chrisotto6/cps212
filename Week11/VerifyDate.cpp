@@ -17,7 +17,7 @@ void VerifyDate::setMonth(int month) {
 }
 
 // Sets the year
-void VerifyDate::setYear(double year) {
+void VerifyDate::setYear(int year) {
 	year = year;
 }
 
@@ -42,7 +42,7 @@ string VerifyDate::printDate() {
 	string date;
 	int mo = getMonth();
 	int day = getDay();
-	double year = getYear();
+	int year = getYear();
 
 	// Sets the string to variables based on the object defined by the user and returns the formatted string
 	date = to_string(mo) + '/' + to_string(day) + '/' + to_string(year);
@@ -50,7 +50,7 @@ string VerifyDate::printDate() {
 }
 
 // Checks to see if the passed in year is a leap year, returning true if it is
-bool VerifyDate::isLeap(double year) const {
+bool VerifyDate::isLeap(int year) const {
 	// Creates boolean for holding the value of the year being a leap year
 	bool leap;
 	
@@ -68,7 +68,7 @@ bool VerifyDate::isLeap(double year) const {
 }
 
 // Checks to see if the user inputted date is of valid input
-bool VerifyDate::validateDate(int day, int month, double year) {
+bool VerifyDate::validateDate(int day, int month, int year) {
 }
 
 // Checks to make sure the month input is valid
@@ -76,5 +76,5 @@ bool VerifyDate::validateMonth(int month) {
 }
 
 // Checks to make sure the year is of valid input
-bool VerifyDate::validateYear(double year) {
+bool VerifyDate::validateYear(int year) {
 }
