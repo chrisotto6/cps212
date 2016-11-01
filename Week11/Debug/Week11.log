@@ -1,0 +1,11 @@
+﻿  VerifyDate.cpp
+VerifyDate.cpp(73): warning C4804: '<=': unsafe use of type 'bool' in operation
+VerifyDate.cpp(78): warning C4804: '<=': unsafe use of type 'bool' in operation
+VerifyDate.cpp(93): warning C4804: '<=': unsafe use of type 'bool' in operation
+VerifyDate.cpp(105): warning C4804: '<=': unsafe use of type 'bool' in operation
+  Week11.cpp
+Week11.cpp(19): warning C4101: 'output': unreferenced local variable
+  Generating Code...
+  AssemblyInfo.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Week11.vcxproj -> C:\Git\cps212\Week11\Debug\Week11.exe
+  Week11.vcxproj -> C:\Git\cps212\Week11\Debug\Week11.pdb (Partial PDB)

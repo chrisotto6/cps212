@@ -1,7 +1,6 @@
 #pragma once
 
 // Verify Date class Declaration
-#include <string>
 
 class VerifyDate
 {
@@ -12,9 +11,12 @@ private:
 	int year = 2000;
 
 	// Private Mutator Functions
-	bool isLeap(int) const;
-	
+	bool isLeap() const;
 public:
+	// Data Members
+	int regularYear[13] = { 1,31,28,31,30,31,30,31,31,30,31,30,31 };
+	int leapYear[13] = { 1,31,29,31,30,31,30,31,31,30,31,30,31 };
+
 	// Setters
 	void setDay(int);
 	void setMonth(int);
@@ -23,12 +25,12 @@ public:
 	// Getters
 	int getDay() const;
 	int getMonth() const;
-	double getYear() const;
+	int getYear() const;
 
 	// Public Mutator Functions
-	string printDate();
-	bool validateDate(int, int, int);
-	bool validateMonth(int);
-	bool validateYear(int);
+	void printDate();
+	bool validateDate();
+	bool validateMonth();
+	bool validateYear();
 };
 
