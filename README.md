@@ -121,3 +121,20 @@ In a leap year, February has 29 days. The following three criteria determine whi
 Example: 2000, 2004, and 2008 are leap years. 1900 and 2100 are not leap years.
 
 Days in each month: January = 31, February = 28 or 29, March = 31, April = 30, May = 31, June = 30, July = 31, August = 31, September = 30, October = 31, November = 30, December = 31.
+
+## Week 12/13
+
+Design a class named Employee.  The class should keep the following information in
+
+- Employee name
+- Employee number
+- Hire date
+
+Write one or more constructors and the appropriate accessor and mutator functions for the class.
+
+Next, write a class name ProductionWorker that is derived from the Employee class.  The ProductionWorker class should have member variables to hold the following information:
+
+- Shift (an integer)
+- Hourly pay rate (a double)
+
+The workday is divided into two shifts:  day and night.  The shift variable will hold an integer value representing the shift that the employee works.  The day shift is shift 1, and the night shift is shift 2.  Write one or more constructors and the appropriate accessor and mutator functions for the class.  Demonstrate the classes by writing a program that uses a ProductionWorker object.
