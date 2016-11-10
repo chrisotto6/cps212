@@ -37,7 +37,15 @@ int VerifyDate::getYear() const {
 	return year;
 }
 
-// Creates the mm/dd/yyyy date format and returns a string for printing
+// Constructor
+VerifyDate::VerifyDate() {
+	day = 1;
+	month = 1;
+	year = 2000;
+}
+
+
+// Creates the mm/dd/yyyy date format and prints
 void VerifyDate::printDate() {
 	string date = to_string(month) + '/' + to_string(day) + '/' + to_string(year);
 	cout << date << endl;

@@ -6,9 +6,9 @@ class VerifyDate
 {
 private:
 	// Data Members
-	int month = 01;
-	int day = 01;
-	int year = 2000;
+	int month;
+	int day;
+	int year;
 
 	// Private Mutator Functions
 	bool isLeap() const;
@@ -16,6 +16,9 @@ public:
 	// Data Members
 	int regularYear[13] = { 1,31,28,31,30,31,30,31,31,30,31,30,31 };
 	int leapYear[13] = { 1,31,29,31,30,31,30,31,31,30,31,30,31 };
+	
+	// Constructor
+	VerifyDate();
 
 	// Setters
 	void setDay(int);
